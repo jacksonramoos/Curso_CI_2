@@ -51,5 +51,5 @@ jobs:
       run: go build -v main.go
   
   docker:
-    needes: build
+    needs: build
     uses: ./.github/workflows/Docker.yml
